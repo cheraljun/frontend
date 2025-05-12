@@ -1,6 +1,6 @@
 git add html css js readme.md
 
-git commit -m "front-end"
+git commit -m "学习html day1"
 
 git remote add origin git@github.com:cheraljun/frontend.git
 
