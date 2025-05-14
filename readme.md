@@ -1,6 +1,6 @@
 git add html css js readme.md
 
-git commit -m "初步学习完html"
+git commit -m "昨天没学完，今天才初步学完html，掌握简单表单的用法"
 
 git remote add origin git@github.com:cheraljun/frontend.git
 
