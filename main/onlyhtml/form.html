@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>form表单</title>
+</head>
+<body>
+    <form>
+        <label>下面是一个空的输入框</label><br>
+        <input type="text"><br>
+        <label>有提示的输入框</label><br>
+        <input type="text" placeholder="这是一行灰色的字"><br>
+        <label>有默认输入的输入框</label><br>
+        <input type="text" value="这是默认文本">
+        <br><br>
+        <!--单选-->
+        <label>单选</label><br>
+        <input type="radio" name="mingzi">chenruikang
+        <input type="radio" name="mingzi">jingxuan
+        <input type="radio" name="mingzi">cheral
+        <input type="radio" name="mingzi">jun
+        <br><br>
+        <!--多选-->
+        <label>多选</label><br>
+        <input type="checkbox" name="mingzi">chenruikang
+        <input type="checkbox" name="mingzi">jingxuan
+        <input type="checkbox" name="mingzi">cheral
+        <input type="checkbox" name="mingzi">jun
+        <br><br>
+        <!--for属性, 把label绑定给input的id属性-->
+        <!--显式绑定 优先选择-->
+        <p>经典场景</p>
+        <label for="username">username!please type!</label><br>
+        <input type="text" id="username" placeholder="username?"><br><br>
+        <label for="pwd">password!please type!</label><br>
+        <input type="password" id="pwd" placeholder="password?"><br><br>
+    </form>
+</body>
+</html>

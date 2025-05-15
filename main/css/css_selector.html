@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>different selector</title>
+    <style>
+        /* 通用选择器 */
+        *{
+            font-family: Kaiti;
+        }
+
+        /* 元素选择器 */
+        h2{
+            color: blue;
+            font-size: 20px;
+        }
+
+        /* 类选择器 */
+        .highlight{
+            background-color: chartreuse;
+            font-size: 20px;
+        }
+
+        /* id选择器 */
+        #header4{
+            color: white;
+            background-color: black;
+            font-size: 20px;
+        }
+
+        /* 子元素选择器 优先级：id>类>标签名*/
+        .father > .son{
+            color: white;
+            background-color: crimson;
+        }
+
+        /* 后代选择器（包含选择器） */
+        .father p{
+            font-size: 60px;
+        }
+
+        /* 相邻选择器（兄弟选择器） */
+        h5 + p{
+            background-color: black;
+            color: white;
+        }
+
+        /* 伪类选择器 状态 不能单独用，需要跟着其他选择器
+        类选择器  .标签 需手动写在html中class
+        伪类选择器  :状态 自动识别无需写在html里 */
+        #colorchange:hover{
+            background-color: blue;
+            color: aliceblue;
+        }
+        p:hover{
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        /* 伪元素选择器 创建虚拟元素 插入虚拟内容
+        ::after
+        ::before
+        */
+    </style>
+</head>
+<body>
+    <h1>不同类别的css选择器，css导入方式以head中定义的内部样式表为例</h1>
+    <h2>元素选择器</h2>
+    <h3 class="highlight">类选择器，类名：highlight</h3>
+    <h4 id="header4">id选择器，id：header4</h4>
+    <!-- 父类 -->
+    <div class="father">
+        <!-- 子类 -->
+         <div class="son">
+            <p>子元素选择器</p>
+         </div>
+        <div>
+            <!-- 后代 -->
+            <div class="grandson">
+                <p>后代选择器（包含选择器）</p>
+            </div>
+        </div>
+    </div>
+    <p>普通p标签1</p>
+    <h5>相邻选择器（兄弟选择器）</h5>
+    <p>普通p标签2</p>
+
+    <span id="colorchange" style="font-size: 40px;">伪类选择器</span>
+</body>
+</html>

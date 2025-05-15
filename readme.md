@@ -1,6 +1,6 @@
-git add html css js readme.md
+git add main readme.md
 
-git commit -m "差一个伪类选择器"
+git commit -m "选择器"
 
 git remote add origin git@github.com:cheraljun/frontend.git
 
