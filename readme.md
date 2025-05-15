@@ -1,6 +1,6 @@
 git add main readme.md
 
-git commit -m "选择器，并且调整文档结构"
+git commit -m "玩耍伪类选择器"
 
 git remote add origin git@github.com:cheraljun/frontend.git
 
