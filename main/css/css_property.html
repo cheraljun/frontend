@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font: 40px "kaiti";
+        }
+        .complex :hover{
+            color: aliceblue;
+            background-color: black;
+        }
+        .longtext:hover{
+            background-color: blue;
+            color: yellow;
+            line-height: 100px;
+        }
+        #block{
+            background-color: yellow;
+            color: blue;
+            width: 200px;
+            height: 200px;
+        }
+        /* 行内元素无法添加width和height，但是可以通过display强制设置为block */
+        #inline{
+            display: block;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+        #inline-block{
+            width: 192px;
+            height: 128px;
+        }
+    </style>
+</head>
+<body>
+    <div class="complex">
+        <span>搜索</span>
+    </div>
+    <div class="longtext">
+        <span>行间距行间距行间距行间距行间距行间距行间距行间距行间距行间距行间距行间距</span>
+    </div>
+    <div id="block">块元素：block</div>
+    <span id="inline">行内块元素inline</span>
+    <img id="inline-block" src="https://cn.bing.com/th?id=OBTQ.BT1768E210798B1B4D1DCE50899884BA5E6DE61FE095425F24414F06D06E3239EE&rs=2&c=1" alt="未成功加载小鸟">
+    <img id="inline-block" src="https://cn.bing.com/th?id=OBTQ.BT1768E210798B1B4D1DCE50899884BA5E6DE61FE095425F24414F06D06E3239EE&rs=2&c=1" alt="未成功加载小鸟">
+    <img id="inline-block" src="https://cn.bing.com/th?id=OBTQ.BT1768E210798B1B4D1DCE50899884BA5E6DE61FE095425F24414F06D06E3239EE&rs=2&c=1" alt="未成功加载小鸟">
+    <img id="inline-block" src="https://cn.bing.com/th?id=OBTQ.BT1768E210798B1B4D1DCE50899884BA5E6DE61FE095425F24414F06D06E3239EE&rs=2&c=1" alt="未成功加载小鸟">
+</body>
+</html>

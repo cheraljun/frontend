@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        /* 文档流就像一个 “盒子队列”，每个块级元素都是盒子里的物品，盒子（父元素）会根据物品高度调整自己的高度。
+        浮动元素就像被 “拎出盒子” 的物品，盒子（父元素）不再知道它的存在，所以高度不会包含它，导致盒子变矮（坍塌）。
+        需要让父元素重新感知浮动子元素的高度，给父元素添加 overflow: hidden */
+        .father{
+            background-color: red;
+            /* width: 600px; */
+            /* height: 600px; */
+            border: 40px solid blue;
+            overflow: hidden;
+        }
+        .leftson{
+            float: left;
+            background-color: aliceblue;
+            width: 200px;
+            height: 200px;
+        }
+        .rightson{
+            float: right;
+            background-color: aliceblue;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="leftson">left floatleft floatleft floatleft floatleft floatleft floatleft float</div>
+        <div class="rightson">right float</div>
+    </div>
+</body>
+</html>
