@@ -1,6 +1,6 @@
 git add main readme.md
 
-git commit -m "JavaScript学习完成。至此三剑客完结撒花！"
+git commit -m "开灯"
 
 git remote add origin git@github.com:cheraljun/frontend.git
 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img style="width: 200px;height: auto;" id="light_off" src="https://www.runoob.com/images/pic_bulboff.gif" alt="关灯状态">
+    <button id="light_button" style="font-size: 20px;">点击开灯</button>
+</div>
+<script>
+let livelight = document.getElementById("light_off")
+let livebutton = document.getElementById("light_button")
+
+livebutton.onclick = function(){
+    livelight.src = "https://www.runoob.com/images/pic_bulbon.gif"
+    livebutton.textContent = "成功开灯!"
+    }
+</script>
+</body>
+</html>
