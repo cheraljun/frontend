@@ -1,6 +1,6 @@
 git add main readme.md
 
-git commit -m "开始学习JavaScript，导入方式 变量 数据类型 for while break continue语句"
+git commit -m "JavaScript学习完成。至此三剑客完结撒花！"
 
 git remote add origin git@github.com:cheraljun/frontend.git
 

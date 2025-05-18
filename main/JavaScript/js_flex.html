@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            background-color: blue;
+            height: 20rem;
+            flex-direction: row-reverse;
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            flex-wrap: wrap-reverse;/*开启flex-wrap后会出现多个轴线*/
+            /* justify-content: center; */
+            justify-content: space-between;
+            align-items: center;
+            /* align-content: center; */
+        }
+        .item{
+            width: 10rem;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="background-color:black ;color: aqua;">1</div>
+        <div class="item" style="background-color: yellow;color: aqua;">2</div>
+        <div class="item" style="background-color: black;color: aqua;">3</div>
+        <div class="item" style="background-color: yellow;color: aqua;">4</div>
+        <div class="item" style="background-color:black ;color: aqua;">5</div>
+        <div class="item" style="background-color: yellow;color: aqua;">6</div>
+    </div>
+
+    <script>
+    //根据设备宽度计算html标签的fontsize的属性值，设备宽度/10
+    function resetHTMLfontsize(){
+        document.documentElement.style.fontSize = screen.width / 100 + "px";
+    }
+    resetHTMLfontsize();
+
+    //重置时重新加载resetHTMLfontsize()函数
+    window.onresize = resetHTMLfontsize;
+
+</script>
+</body>
+</html>

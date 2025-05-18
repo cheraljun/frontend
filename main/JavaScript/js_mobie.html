@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box_pixel{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin-bottom: 60px;
+        }
+        .box_rem{
+            width: 1rem;
+            height: 1rem;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div class="box_pixel"></div>
+<div class="box_rem"></div>
+
+<script>
+    //根据设备宽度计算html标签的fontsize的属性值，设备宽度/10
+    function resetHTMLfontsize(){
+        document.documentElement.style.fontSize = screen.width / 10 + "px";
+    }
+    resetHTMLfontsize();
+
+    //重置时重新加载resetHTMLfontsize()函数
+    window.onresize = resetHTMLfontsize();
+
+</script>
+</body>
+</html>

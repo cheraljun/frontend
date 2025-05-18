@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //函数
+        //function function_name(args1, args2, args3...可不写表示不传参){
+        //函数体
+        //return返回值
+        //}
+        function sayhello(){
+            console.log("hello world");
+        }
+        sayhello();
+        function returnhello(){
+            return "hello!"
+        }
+        let greet = returnhello();
+        console.log(greet);
+
+        function hello_name(name){
+            console.log("hello, " + name);
+        }
+        hello_name("cheralchen")
+
+        //作用域
+        let globol_var = "globol!";
+        function local_x(){
+            let local_var = "local!";
+            console.log(globol_var);
+            console.log(local_var);
+        }
+        local_x()
+    </script>
+</body>
+</html>
